@@ -1,0 +1,105 @@
+{
+  "parameters": {
+    "moisture": {
+      "label": "Soil Moisture",
+      "unit": "%",
+      "optimal": { "min": 40, "max": 70 },
+      "levels": [
+        { "min": 0, "max": 15, "status": "critical", "label": "Severely Dry", "action": "Irrigate immediately at high volume. Soil is critically dry." },
+        { "min": 15, "max": 30, "status": "warning", "label": "Dry", "action": "Irrigate soon. Moisture levels are below optimal." },
+        { "min": 30, "max": 40, "status": "low", "label": "Below Optimal", "action": "Light irrigation recommended to reach optimal range." },
+        { "min": 40, "max": 70, "status": "good", "label": "Optimal", "action": "Moisture levels are ideal. No action needed." },
+        { "min": 70, "max": 85, "status": "warning", "label": "High", "action": "Reduce irrigation. Soil is moist enough." },
+        { "min": 85, "max": 101, "status": "critical", "label": "Waterlogged", "action": "Stop irrigation immediately. Improve drainage." }
+      ]
+    },
+    "temperature": {
+      "label": "Soil Temperature",
+      "unit": "°C",
+      "optimal": { "min": 18, "max": 28 },
+      "levels": [
+        { "min": -10, "max": 5, "status": "critical", "label": "Freezing", "action": "Critical frost conditions. Use frost protection covers." },
+        { "min": 5, "max": 12, "status": "warning", "label": "Cold", "action": "Soil is too cold for optimal growth. Consider mulching." },
+        { "min": 12, "max": 18, "status": "low", "label": "Cool", "action": "Temperature is below optimal. Growth may be slowed." },
+        { "min": 18, "max": 28, "status": "good", "label": "Optimal", "action": "Temperature is ideal for crop growth." },
+        { "min": 28, "max": 35, "status": "warning", "label": "Warm", "action": "Temperature is above optimal. Ensure adequate irrigation." },
+        { "min": 35, "max": 45, "status": "critical", "label": "Hot", "action": "Heat stress risk. Increase irrigation and provide shade." },
+        { "min": 45, "max": 100, "status": "critical", "label": "Extreme Heat", "action": "Dangerous temperatures. Emergency cooling measures needed." }
+      ]
+    },
+    "ph": {
+      "label": "Soil pH",
+      "unit": "",
+      "optimal": { "min": 6, "max": 7.5 },
+      "levels": [
+        { "min": 0, "max": 5, "status": "critical", "label": "Very Acidic", "action": "Apply agricultural lime (CaCO₃) to raise pH. Urgent." },
+        { "min": 5, "max": 5.5, "status": "warning", "label": "Acidic", "action": "Apply dolomitic lime to gradually raise pH." },
+        { "min": 5.5, "max": 6, "status": "low", "label": "Slightly Acidic", "action": "Monitor pH. Light liming may be beneficial." },
+        { "min": 6, "max": 7.5, "status": "good", "label": "Optimal", "action": "pH is ideal for most crops. No action needed." },
+        { "min": 7.5, "max": 8, "status": "low", "label": "Slightly Alkaline", "action": "Monitor pH. Consider sulfur application if trend continues." },
+        { "min": 8, "max": 9, "status": "warning", "label": "Alkaline", "action": "Apply elemental sulfur or ammonium-based fertilizers." },
+        { "min": 9, "max": 15, "status": "critical", "label": "Very Alkaline", "action": "Urgent pH correction needed. Apply sulfur and organic matter." }
+      ]
+    },
+    "ec": {
+      "label": "Electrical Conductivity",
+      "unit": "µS/cm",
+      "optimal": { "min": 200, "max": 1200 },
+      "levels": [
+        { "min": 0, "max": 100, "status": "warning", "label": "Very Low", "action": "Very low nutrient content. Apply balanced fertilizer." },
+        { "min": 100, "max": 200, "status": "low", "label": "Low", "action": "Nutrient levels are low. Consider light fertilization." },
+        { "min": 200, "max": 1200, "status": "good", "label": "Optimal", "action": "Nutrient levels are well balanced." },
+        { "min": 1200, "max": 2000, "status": "warning", "label": "Elevated", "action": "Nutrient levels are high. Reduce fertilization." },
+        { "min": 2000, "max": 3000, "status": "critical", "label": "High", "action": "Salinity risk. Leach soil with clean water." },
+        { "min": 3000, "max": 99999, "status": "critical", "label": "Very High", "action": "Severe salinity. Stop fertilization, leach soil immediately." }
+      ]
+    },
+    "nitrogen": {
+      "label": "Nitrogen (N)",
+      "unit": "mg/kg",
+      "optimal": { "min": 40, "max": 80 },
+      "levels": [
+        { "min": 0, "max": 15, "status": "critical", "label": "Very Low", "action": "Severe nitrogen deficiency. Apply urea or ammonium nitrate urgently." },
+        { "min": 15, "max": 30, "status": "warning", "label": "Low", "action": "Nitrogen deficiency. Apply nitrogen-rich fertilizer." },
+        { "min": 30, "max": 40, "status": "low", "label": "Below Optimal", "action": "Light nitrogen supplementation recommended." },
+        { "min": 40, "max": 80, "status": "good", "label": "Optimal", "action": "Nitrogen levels are ideal for growth." },
+        { "min": 80, "max": 120, "status": "warning", "label": "Elevated", "action": "Nitrogen is high. Reduce or skip next fertilization." },
+        { "min": 120, "max": 99999, "status": "critical", "label": "Excessive", "action": "Nitrogen excess. Stop fertilization. Leaching recommended." }
+      ]
+    },
+    "phosphorus": {
+      "label": "Phosphorus (P)",
+      "unit": "mg/kg",
+      "optimal": { "min": 20, "max": 50 },
+      "levels": [
+        { "min": 0, "max": 8, "status": "critical", "label": "Very Low", "action": "Severe phosphorus deficiency. Apply superphosphate or rock phosphate." },
+        { "min": 8, "max": 15, "status": "warning", "label": "Low", "action": "Phosphorus deficiency. Apply phosphate fertilizer." },
+        { "min": 15, "max": 20, "status": "low", "label": "Below Optimal", "action": "Light phosphorus supplementation recommended." },
+        { "min": 20, "max": 50, "status": "good", "label": "Optimal", "action": "Phosphorus levels are ideal for root development." },
+        { "min": 50, "max": 80, "status": "warning", "label": "Elevated", "action": "Phosphorus is high. Reduce phosphate application." },
+        { "min": 80, "max": 99999, "status": "critical", "label": "Excessive", "action": "Phosphorus excess. Stop phosphate fertilizers." }
+      ]
+    },
+    "potassium": {
+      "label": "Potassium (K)",
+      "unit": "mg/kg",
+      "optimal": { "min": 120, "max": 250 },
+      "levels": [
+        { "min": 0, "max": 50, "status": "critical", "label": "Very Low", "action": "Severe potassium deficiency. Apply potash (KCl) urgently." },
+        { "min": 50, "max": 90, "status": "warning", "label": "Low", "action": "Potassium deficiency. Apply potassium-rich fertilizer." },
+        { "min": 90, "max": 120, "status": "low", "label": "Below Optimal", "action": "Light potassium supplementation recommended." },
+        { "min": 120, "max": 250, "status": "good", "label": "Optimal", "action": "Potassium levels are ideal for fruit development." },
+        { "min": 250, "max": 400, "status": "warning", "label": "Elevated", "action": "Potassium is high. Reduce potassium application." },
+        { "min": 400, "max": 99999, "status": "critical", "label": "Excessive", "action": "Potassium excess. Stop potassium fertilizers." }
+      ]
+    }
+  },
+  "overall": {
+    "status_priority": ["critical", "warning", "low", "good"],
+    "summary_templates": {
+      "all_good": "All parameters are within optimal ranges for {landName}. No corrective action required.",
+      "some_issues": "{landName} shows some parameters outside optimal range. Review the recommendations below.",
+      "critical_action": "Immediate action required for {landName}. {criticalCount} parameter(s) at critical levels."
+    }
+  }
+}

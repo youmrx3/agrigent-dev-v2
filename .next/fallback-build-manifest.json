@@ -1,0 +1,13 @@
+{
+  "pages": {
+    "/_app": []
+  },
+  "devFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [
+    "static/NSShOwd-MCoRo_h5gvU-e/_buildManifest.js",
+    "static/NSShOwd-MCoRo_h5gvU-e/_ssgManifest.js",
+    "static/NSShOwd-MCoRo_h5gvU-e/_clientMiddlewareManifest.js"
+  ],
+  "rootMainFiles": []
+}

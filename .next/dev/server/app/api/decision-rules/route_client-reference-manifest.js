@@ -1,0 +1,1 @@
+globalThis.__RSC_MANIFEST=(globalThis.__RSC_MANIFEST||{});globalThis.__RSC_MANIFEST["/api/decision-rules/route"]={"moduleLoading":{"prefix":"/_next/"},"ssrModuleMapping":{},"edgeSSRModuleMapping":{},"clientModules":{},"entryCSSFiles":{"C:\\Users\\YOU-BER\\Desktop\\agrigent-dev v2\\app\\api\\decision-rules\\route":[]},"rscModuleMapping":{},"edgeRscModuleMapping":{}};
