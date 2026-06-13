@@ -1,12 +1,1 @@
-{
-  "/api/sensor/live/route": "app/api/sensor/live/route.js",
-  "/api/decision-rules/route": "app/api/decision-rules/route.js",
-  "/page": "app/page.js",
-  "/dashboard/page": "app/dashboard/page.js",
-  "/dashboard/devices/page": "app/dashboard/devices/page.js",
-  "/dashboard/decisions/page": "app/dashboard/decisions/page.js",
-  "/dashboard/profiles/page": "app/dashboard/profiles/page.js",
-  "/dashboard/ai-insights/page": "app/dashboard/ai-insights/page.js",
-  "/dashboard/notifications/page": "app/dashboard/notifications/page.js",
-  "/dashboard/settings/page": "app/dashboard/settings/page.js"
-}
+{}

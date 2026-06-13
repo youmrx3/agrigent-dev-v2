@@ -1,1 +1,0 @@
-globalThis.__RSC_MANIFEST=(globalThis.__RSC_MANIFEST||{});globalThis.__RSC_MANIFEST["/api/sensor/live/route"]={"moduleLoading":{"prefix":"/_next/"},"ssrModuleMapping":{},"edgeSSRModuleMapping":{},"clientModules":{},"entryCSSFiles":{"C:\\Users\\YOU-BER\\Desktop\\agrigent-dev v2\\app\\api\\sensor\\live\\route":[]},"rscModuleMapping":{},"edgeRscModuleMapping":{}};
